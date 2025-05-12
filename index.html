@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HipHop CV | Artistas Cabo-Verdianos</title>
+    <style>
+        /* Cores inspiradas na bandeira de Cabo Verde + estilo urbano */
+        :root {
+            --azul-cv: #003893;    /* Azul da bandeira */
+            --vermelho-cv: #CF2027; /* Vermelho da bandeira */
+            --branco: #FFFFFF;
+            --preto: #1A1A1A;
+            --dourado: #FFD700;     /* Destaques */
+            --cinza: #F5F5F5;
+        }
+
+        /* Reset e Estilos Gerais */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cinza);
+            color: var(--preto);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--preto);
+            color: var(--branco);
+            padding: 15px 0;
+            border-bottom: 3px solid var(--dourado);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--dourado);
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--dourado);
+        }
+
+        /* Hero Section (Artista em Destaque) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://example.com/hero-bg.jpg');
+            background-size: cover;
+            color: var(--branco);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            background-color: var(--vermelho-cv);
+            color: var(--branco);
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--azul-cv);
+        }
+
+        /* Grid de Artistas */
+        .artists-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .artist-card {
+            background: var(--branco);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .artist-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .artist-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .artist-info h3 {
+            margin: 0;
+            color: var(--azul-cv);
+        }
+
+        .artist-info p {
+            color: var(--preto);
+            font-size: 0.9em;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--branco);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            color: var(--vermelho-cv);
+            border-bottom: 2px solid var(--dourado);
+            padding-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--preto);
+            color: var(--branco);
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--branco);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--dourado);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+            <img src="LogoHipHopKriolu.png" alt="HipHop Kriolu Logo">
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Artistas</a></li>
+                    <li><a href="#">Músicas</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Artista em Destaque) -->
+    <section class="hero">
+        <h1>BLACK SIDE</h1>
+        <p>O grupo pioneiro do rap cabo-verdiano, representando a Praia desde os anos 90.</p>
+        <button class="btn">Ver Perfil</button>
+    </section>
+
+    <!-- Grid de Artistas -->
+    <section class="artists-grid">
+        <div class="artist-card">
+            <img src="https://via.placeholder.com/200" alt="Black Side">
+            <div class="artist-info">
+                <h3>Black Side</h3>
+                <p>Praia • 50K seguidores</p>
+            </div>
+        </div>
+        <div class="artist-card">
+            <img src="https://via.placeholder.com/200" alt="Eneida Marta">
+            <div class="artist-info">
+                <h3>Eneida Marta</h3>
+                <p>Mindelo • 35K seguidores</p>
+            </div>
+        </div>
+        <div class="artist-card">
+            <img src="https://via.placeholder.com/200" alt="Tcheka MC">
+            <div class="artist-info">
+                <h3>Tcheka MC</h3>
+                <p>Sal • 25K seguidores</p>
+            </div>
+        </div>
+        <div class="artist-card">
+            <img src="https://via.placeholder.com/200" alt="Brito">
+            <div class="artist-info">
+                <h3>Brito</h3>
+                <p>Praia • 20K seguidores</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar (opcional, pode ser ajustado com CSS Grid/Flex) -->
+    <aside class="sidebar">
+        <h3>Top Músicas</h3>
+        <ul>
+            <li>Black Side - "Nôs Cultura"</li>
+            <li>Eneida Marta - "Mindelense"</li>
+            <li>Tcheka MC - "Ilha do Sal"</li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Sobre</a>
+            <a href="#">Contacto</a>
+            <a href="#">Anuncie</a>
+            <a href="#">Termos</a>
+        </div>
+        <p>© 2024 HipHop CV - O primeiro portal de rap cabo-verdiano</p>
+    </footer>
+</body>
+</html>
