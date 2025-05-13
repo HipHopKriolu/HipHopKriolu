@@ -170,32 +170,117 @@
             color: var(--dourado);
         }
     </style>
+
+
+    <style>
+    /* Adicione isso ao seu CSS existente */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .logo img {
+        max-height: 60px; /* Ajuste conforme necessário */
+        width: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* Media Query para telas maiores */
+    @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Aumentar tamanho da logo */
+    /* Estilo para a logo com animação automática */
+    .logo img {
+        height: 66px;
+        width: auto;
+        animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(2); }
+    }
+
+    /* Estilo para a imagem do 2 Pac */
+    .hero-logo {
+        max-width: 130%; /* Ajuste conforme necessário */
+        height: auto;
+        max-height: 230px; /* Ajuste conforme necessário */
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste o padding do hero se necessário */
+    .hero {
+        padding: 60px 20px; /* Reduzi um pouco o padding superior */
+    }
+
+</style>
+
+
+
+<script>
+    // JavaScript para melhorar a responsividade (opcional)
+    document.addEventListener('DOMContentLoaded', function() {
+        // Pode adicionar funcionalidades JavaScript aqui se necessário
+        console.log('Site carregado!');
+    });
+</script>
+
+
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
+    <div class="container">
+        <div class="logo-container">
             <div class="logo">
-            <img src="LogoHipHopKriolu.png" alt="HipHop Kriolu Logo">
+                <img src="logo.png" alt="HipHop Kriolu Logo">
+            </div>
         </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Artistas</a></li>
-                    <li><a href="#">Músicas</a></li>
-                    <li><a href="#">Vídeos</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Eventos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Músicas</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
     <!-- Hero Section (Artista em Destaque) -->
     <section class="hero">
-        <h1>BLACK SIDE</h1>
-        <p>O grupo pioneiro do rap cabo-verdiano, representando a Praia desde os anos 90.</p>
-        <button class="btn">Ver Perfil</button>
+        <img src="1.png" alt="Black Side" class="hero-logo">
+        <p>Voz de Povu, Ritmo de Rua!</p>
+        <button class="btn">Quale de kel Site li??? Nha nomi he Leonardo e thanks pa bu abri nha site, futuramente ta sta equipado kuh kes midjor Rap Kriolu pa da bu obidu mas Vida e Sintonia</button>
     </section>
 
     <!-- Grid de Artistas -->
@@ -248,7 +333,7 @@
             <a href="#">Anuncie</a>
             <a href="#">Termos</a>
         </div>
-        <p>© 2024 HipHop CV - O primeiro portal de rap cabo-verdiano</p>
+        <p>© 2025 HipHop CV - Primeiro portal de Hip Hop/ Rap cabo-verdiano - Site fetu pa Leonardo Nardy</p>
     </footer>
 </body>
 </html>
